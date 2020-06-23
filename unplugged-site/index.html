@@ -40,17 +40,15 @@
 
 <main>
 
-  <section>
-      <div class="hero-image"> 
-        <img src="img/hero-image.jpg" alt="woman in forest on bridge" />
-        <div class="hero-text">
+  <section class="hero area">
+      <div class="content-wrapper"> 
         <h1>Retreat from the desk, return refreshed.</h1>
-      </div>
     </div>
   </section>
 
   <aside> <!-- newsletter sign up -->
-    <div class="blurb">
+    <div class="content-wrapper">
+      <div class="blurb">
       <h2>Want to join the next retreat?</h2>
       <p>Find out when we are holding our next retreat and how your 
         company or team can sign up!</p>
@@ -60,6 +58,7 @@
       <input type="text" name="name" value="email address">
       <input type="button" value="Download Itinerary">
     </div>
+  </div> <!-- aside content wrapper ends -->
   </aside>
 
 </main>
@@ -67,7 +66,11 @@
 <footer>
     <div class="content-wrapper">
         <div class="footer-content">
-            <address class="contact"></address>
+            <address class="contact">
+              <h4>Contact</h4>
+              <p>555-555-5555<br />
+              hello@unplugged.com</p>
+            </address>
             <div class="social">
                 <div class="social-icons">
                   <p><a href="https://www.facebook.com" target="_blank"></a></p>
@@ -79,7 +82,9 @@
         </div> <!-- footer content ends -->
     </div> <!--footer content-wrapper ends -->
 
-    <div class="copyright"></div>
+    <div class="copyright">
+      <p>Copyright 2020 | Unplugged</p>
+    </div>
 </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
