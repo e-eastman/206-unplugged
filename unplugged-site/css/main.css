@@ -242,6 +242,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('img/hero-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Aside */
