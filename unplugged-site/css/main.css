@@ -136,6 +136,13 @@ ul, ol {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
 
 li, address {
   font-family: 'Open Sans', sans-serif;
@@ -146,6 +153,10 @@ li, address {
 address {
   font-style: normal;
   color: #fff;
+}
+
+address p {
+  text-align: center;
 }
 
 .content-wrapper {
@@ -171,6 +182,7 @@ footer {
 
 header {
   padding: 15px 0;
+  background: black;
 }
 
 header .content-wrapper {
@@ -179,6 +191,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav {
@@ -193,6 +213,13 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
+}
+
+header nav ul li {
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 footer {
@@ -221,6 +248,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -242,7 +270,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('img/hero-image.jpg');
+  background-image: url('../img/hero-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -292,6 +320,10 @@ button {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features article {
@@ -478,6 +510,18 @@ button {
   margin: 100px 0;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 /* Header */
 
 header {
@@ -488,6 +532,11 @@ header {
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
+}
+
+
+header figure {
+  width: 40%;
 }
 
 header nav {
@@ -537,11 +586,12 @@ aside .content-wrapper .form {
 .reviews article {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 
 .reviews article div {
-  width: 49%
+  width: 49%;
 }
 
 /* Footer */
@@ -563,6 +613,10 @@ footer .contact {
 
 footer .copyright {
   width: 100%;
+}
+
+footer .copyright p {
+  text-align: center;
 }
 
 /* About Page */
@@ -601,14 +655,13 @@ footer .copyright {
 .faq h2 {
   width: 100%
 }
-
 }
 
 @media only screen and (min-width: 1024px) {
   /* Desktop Styles */
 
 .content-wrapper {
-  max-wdith: 960px;
+  max-width: 960px;
 }
 
 .hero-area h1 {
@@ -652,8 +705,6 @@ aside .content-wrapper .form {
 .faq h2 {
 width: 100%
 }
-
-
 }
 
 
