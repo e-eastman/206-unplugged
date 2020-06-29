@@ -92,7 +92,8 @@ textarea {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: left;
+  font-weight: 400;
+  color: #E2E3ED;
 }
 
 html {
@@ -102,10 +103,12 @@ html {
 
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: left;
 }
 
 h1 {
-  font-size: 3.75em;
+  font-size: 2.25em;
 }
 
 h2 {
@@ -113,18 +116,15 @@ h2 {
 }
 
 h3, h4 {
-  font-size: 1.125;
+  font-size: 1.125em;
   line-height: 1.5em;
   margin: 20px 0;
-}
-
-h4{
-  font-size: em;
 }
 
 p {
   font-size: .875em;
   line-height: 1.285em;
+  text-align: left;
 }
 
 a {
@@ -145,6 +145,7 @@ li, address {
 
 address {
   font-style: normal;
+  color: #fff;
 }
 
 .content-wrapper {
@@ -196,10 +197,18 @@ header nav ul {
 
 footer {
   flex-direction: column;
+  justify-content: center;
+  background-color: black;
 }
 
 footer .contact {
   margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.footer-content h4 {
+  text-align: center;
 }
 
 footer .social-icons {
@@ -227,7 +236,7 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* Mobile Styles - Homepage */
+/* Mobile First Homepage */
 
 .hero-area {
   display: flex;
@@ -235,12 +244,41 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+/* Aside */
 
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #9D9EA4;
+  background-color: #E1E2EA;
+  font-style: italic;
+  padding: 1em;
+}
+
+button {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2A423A;
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -270,6 +308,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -278,6 +317,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2A423A;
 }
 
 .reviews h2 {
