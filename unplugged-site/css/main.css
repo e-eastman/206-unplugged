@@ -11,12 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -416,7 +410,7 @@ button {
   text-align: left;
 }
 
-/* FAQ page styling */
+/* FAQ Page styling */
 
 .faq {
   background-color: #527158;
@@ -445,6 +439,7 @@ button {
 
 .faq-content p {
   text-align: left;
+  line-height: 1.25em;
 }
 
 /* ==========================================================================
@@ -575,7 +570,7 @@ header figure {
 }
 
 header nav {
-  width: 20%;
+  width: 25%;
 }
 
 header nav ul {
@@ -736,7 +731,6 @@ footer .copyright p {
 .faq h4,
 .faq p {
   font-size: .875em;
-  line-height: 1.125;
 }
 }  
 
