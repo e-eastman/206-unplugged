@@ -155,10 +155,6 @@ address {
   color: #fff;
 }
 
-address p {
-  text-align: center;
-}
-
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -181,7 +177,7 @@ footer {
 }
 
 header {
-  padding: 20px 0;
+  padding: 15px 0;
   background: black;
 }
 
@@ -194,7 +190,7 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 45%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,6 +203,8 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
 }
 
 header nav ul {
@@ -217,24 +215,25 @@ header nav ul {
 }
 
 header nav ul li {
-  font-weight: bold;
+  font-size: 1.125em;
   text-transform: uppercase;
 
 }
 
 footer {
   flex-direction: column;
-  justify-content: center;
   background-color: black;
 }
 
 footer .contact {
   margin-bottom: 50px;
+}
+
+.footer-content h4 {
   text-align: center;
 }
 
-
-.footer-content h4 {
+.footer-content p {
   text-align: center;
 }
 
@@ -274,6 +273,7 @@ footer .copyright {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 500px;
 }
 
 /* Aside */
@@ -304,7 +304,7 @@ button {
   padding: 20px 0;
   margin-top: 20px;
   background-color: #2A423A;
-  font-family: 'poppins', sans-serif;
+  font-family: 'poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
   color: #e2e3ed;
@@ -320,7 +320,7 @@ button {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../img/background.png');
+  background-image: url('../img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -345,6 +345,11 @@ button {
 .features p {
   margin: 0;
   text-align: center;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -403,6 +408,7 @@ button {
 
 .contact-content {
   margin: 0;
+  text-align: left;
 }
 
 /* FAQ page styling */
@@ -429,11 +435,13 @@ button {
 
 .faq-content {
   margin-bottom: 50px;
-}
-
-.faq-content {
   line-height: 1.333em;
 }
+
+.faq-content p {
+  text-align: left;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -558,7 +566,7 @@ header .content-wrapper {
 
 
 header figure {
-  width: 40%;
+  width: 30%;
 }
 
 header nav {
@@ -579,6 +587,10 @@ header nav ul {
   min-height: 600px;
 }
 
+.hero-area {
+  margin: 0;
+}
+
 /* Aside */
 aside .content-wrapper {
   margin: 50px 0;
@@ -589,7 +601,7 @@ aside .content-wrapper {
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 40%;
+  width: 35%;
   margin: 0;
 }
 
@@ -608,7 +620,7 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description {
-  width: 50%
+  width: 62%
 }
 
 /* Reviews */
@@ -655,6 +667,10 @@ footer h4 {
   margin-bottom: 40px;
 }
 
+footer p {
+  line-height: 1.285;
+}
+
 footer .copyright {
   width: 100%;
 }
@@ -677,11 +693,16 @@ footer .copyright p {
 }
 
 .map figure {
-  padding-bottom: 45%;
+  padding-bottom: 45.5%;
+}
 
-
-.contact-section .content-wrapper h2 {
+.contact-top .content-wrapper h2 {
   width: 80%
+}
+
+.contact-top p {
+  font-size: 1.125rem;
+  text-align: left;
 }
 
 .contact-content {
@@ -735,7 +756,7 @@ aside .content-wrapper {
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 30%;
+  width: 40%;
 }
 
 .form-description {
@@ -769,13 +790,13 @@ footer h4 {
 /* About Page */
 
 .mission h2,
-.contact h2 {
+.contact-top .content-wrapper h2 {
   width: 95%;
   font-size: 3em;
 }
 
 .map figure {
-  padding-bottom: 37%;
+  padding-bottom: 37.5%;
 }
 
 .contact-top h4 {
@@ -794,8 +815,8 @@ footer h4 {
 /* FAQ page */
 
 .faq h2 {
-width: 100%
-font-size: 3em;
+  width: 100%;
+  font-size: 3em;
 }
 
 .faq h4,
